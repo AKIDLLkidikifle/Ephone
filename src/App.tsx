@@ -124,7 +124,7 @@ export default function App() {
 					/>
 				</div>
 				<div className=' mb-12'>
-					<Button className="material-symbols-outlined"  onClick={handleExtract}>
+					<Button className="material-symbols-outlined" style={{padding: "20px"}}  onClick={handleExtract}>
 						Add
 					</Button>
 				</div>
@@ -153,8 +153,6 @@ export default function App() {
 						snapToGrid={true}
 						nodeTypes={nodesConfig.nodeTypes}
 					>
-						{/* <Controls /> */}
-						{/* <Background variant={BackgroundVariant.Dots} gap={12} size={1} /> */}
 					</ReactFlow>
 				</div>
 			</main>
