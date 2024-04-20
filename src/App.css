@@ -16,14 +16,15 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
-.note {
+textarea {
   background: #fff;
   border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
+  box-shadow: 0 2px 5px #242323;
   padding: 10px;
   width: 240px;
   margin: 16px;
   float: left;
+  border: none;
 }
 
 footer {
@@ -38,3 +39,6 @@ footer {
   footer p {
     color: #ccc;
   }
+
+
+

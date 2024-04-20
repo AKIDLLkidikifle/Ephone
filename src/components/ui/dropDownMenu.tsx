@@ -49,7 +49,7 @@ setNodes(dupnode)
     <div className=' flex flex-col  absolute top-10 right-1  border-r-4 border-cyan-300 rounded-sm  bg-blue '>
         <ul className=' flex flex-col gap-4 '>
 <li className=" hover:bg-slate-200 w-full p-2">
- <button onClick={()=>handleEditClick(node)}>
+ <button  onClick={()=>handleEditClick(node)}>
   Edit
  </button>
 </li>
@@ -57,7 +57,7 @@ setNodes(dupnode)
 className="hover:bg-slate-200 w-full p-2"
 >
   <button onClick={()=>handleDeletClick(node)}>
-  Delete
+  Delete 
   </button>
 </li>
 <li

@@ -43,7 +43,7 @@ export default function App() {
 	const [nnodes, setNNodes] = useState<Node[]>([]);
 
 	const handleExtract = () => {
-		const regex = /\d+\.\s[A-Za-z\s]+/g;
+		const regex = /\d+\s*[:\.]\s*[A-Za-z\s]+/g; 
 		const matches = text.match(regex);
 	
 		if (matches && matches.length > 0) {
@@ -105,11 +105,9 @@ export default function App() {
 				>
 				
 				</button>
-				<h2 className="flex-grow text-center">Text Menu</h2>
+				
 			</div>
-			
-
-			<div className="p-2 mt-3">
+			<div className="p-2 mt-2">
 				<label
 					className="block text-sm font-medium text-start text-gray-700"
 					htmlFor="message"
@@ -125,9 +123,9 @@ export default function App() {
 						className="border block w-full border-gray-300 rounded-md sm:text-sm p-2"
 					/>
 				</div>
-				<div className=' mt-3 mb-6 ml-1'>
-					<Button onClick={handleExtract}>
-						Extract
+				<div className=' mb-12'>
+					<Button className="material-symbols-outlined"  onClick={handleExtract}>
+						Add
 					</Button>
 				</div>
 				
@@ -155,8 +153,8 @@ export default function App() {
 						snapToGrid={true}
 						nodeTypes={nodesConfig.nodeTypes}
 					>
-						<Controls />
-						<Background variant={BackgroundVariant.Dots} gap={12} size={1} />
+						{/* <Controls /> */}
+						{/* <Background variant={BackgroundVariant.Dots} gap={12} size={1} /> */}
 					</ReactFlow>
 				</div>
 			</main>

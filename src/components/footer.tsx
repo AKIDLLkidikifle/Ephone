@@ -5,8 +5,6 @@ export function Footer() {
   return (
     <footer>
       <p>Copyright ⓒ {year}</p>
-      <a href='https://github.com/AKIDLLkidikifle/REACT_FLOW-ephone' target='_blank'><Github size={24}/></a>
-      
     </footer>
   );
 }

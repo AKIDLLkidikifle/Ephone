@@ -44,7 +44,7 @@ export const TextPanel = () => {
 				>
 					Text
 				</label>
-				<div className="mt-5 note">
+				<div className="mt-5 ">
 					<textarea
 						rows={4}
 						key={selectedNode?.id}

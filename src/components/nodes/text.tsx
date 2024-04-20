@@ -54,7 +54,7 @@ export const TextNode = memo((node: Node) => {
 			)}
 		>
 			<span className="py-1 px-3 text-xs font-semibold bg-violet-100  hover:bg-primary  rounded-t-md flex justify-between items-center">
-				Extracted Menu
+				Menu
 				
 				<Button onClick={()=>SetOpen((prev)=>!prev)}>
 				<LucideGrip/>
